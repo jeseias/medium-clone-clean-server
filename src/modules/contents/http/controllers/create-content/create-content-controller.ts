@@ -1,5 +1,5 @@
 import { Controller } from "@/app/classes/controller";
-import { badRequest, created } from "@/app/helpers/http-helpers";
+import { created } from "@/app/helpers/http-helpers";
 import type { Validator } from "@/app/protocols/validator";
 import { ValidationComposite } from "@/app/validations/composite";
 import { CreateContentUseCase } from "@/modules/contents/domain/use-cases";
@@ -25,10 +25,6 @@ export const buildCreateContentController = (useCase: CreateContentUseCase) => {
         coverImage: httpRequest.body?.coverImage,
         image: httpRequest.body?.image,
       });
-
-      if (operation?.failed) {
-        return badRequest(operation.failed);
-      }
 
       return created(operation.result);
     }
