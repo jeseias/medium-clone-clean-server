@@ -45,7 +45,7 @@ export const buildCreateContentController = (useCase: CreateContentUseCase) => {
   return new CreateContentController(useCase);
 };
 
-export const makeCreateFolderController = () => {
+export const makeCreateContentController = () => {
   const useCase = new CreateContentUseCase(contentPrismaRepository);
   return buildCreateContentController(useCase);
 };
