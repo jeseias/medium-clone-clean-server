@@ -10,6 +10,7 @@
     "typescript": "^5.0.0"
   },
   "dependencies": {
-    "@prisma/client": "5.10.2"
+    "@prisma/client": "^5.10.2",
+    "zod": "^3.22.4"
   }
 }
