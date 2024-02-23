@@ -1,15 +1,3 @@
 # medium-clean-server
 
-To install dependencies:
-
-```bash
-bun install
-```
-
-To run:
-
-```bash
-bun run index.ts
-```
-
-This project was created using `bun init` in bun v1.0.25. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+This is a practice project for me, testing out some new architectures for backend development with nodejs.
