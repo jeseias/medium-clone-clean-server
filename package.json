@@ -1,5 +1,5 @@
 {
-  "name": "medium-clean-server",
+  "name": "medium-clone-clean-server",
   "module": "index.ts",
   "type": "module",
   "scripts": {
